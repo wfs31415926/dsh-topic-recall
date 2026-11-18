@@ -11,14 +11,24 @@
 
 ## 安装
 
-插件是一个 bundle 目录，用 DSH 的插件管理器安装本目录的绝对路径：
+从 npm 安装（发布后，普通用户用这个）：
 
 ```
-plugin_manager install_bundle
-  target: D:\Program Files\DeepSeek Harness\chat\dsh-plugins\topic-recall
+dsh plugin add dsh-topic-recall
 ```
 
-安装后重启 DSH 或按提示重载。插件自带 patch：
+安装后按 DSH 提示重载；如果替换的是已经安装的 npm 包版本，重启 DSH 让新 JS 生效。
+
+### 从源码安装
+
+```
+npm pack
+dsh plugin add .\dsh-topic-recall-0.1.1.tgz
+```
+
+也可以让 AI 用 `plugin_manager install_bundle` 指向本目录的绝对路径（仅限本机开发）。
+
+插件自带 patch：
 
 ```yaml
 - insert:
@@ -27,7 +37,7 @@ plugin_manager install_bundle
       config: {}
 ```
 
-更新已安装的 link 包时，manifest（locale/icon/配置项）可以热重载，但 **JS 模块需要重启 DSH** 才会换成新代码。
+本地 `link:` 包改完源码后，用插件管理器的禁用/启用即可热重载新 JS；替换已安装的 npm 包版本后需要重启 DSH。
 
 ## 配置
 
