@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "dsh-topic-recall",
+    "description": "Recalls only the earlier parts of the same conversation that match a new topic, and stays silent when the topic continues or nothing matches. It reads the session's existing messages, injects at most three short excerpts (1,000 characters by default) before the current message, keeps deduplication state in memory, and makes no network requests, model calls, or file writes. Adjust thresholds in Plugins → dsh-topic-recall; disabling the plugin stops all injection.",
+    "detail": "docs/DETAIL.md"
+  }
+}

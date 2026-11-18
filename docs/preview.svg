@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="topic-recall-title topic-recall-desc">
+  <title id="topic-recall-title">Selective recall of an earlier message</title>
+  <desc id="topic-recall-desc">A new message connects only to the one earlier message that matches its topic.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="#8FA3BF" opacity="0.36">
+      <rect x="64" y="44" width="150" height="22" rx="11"/>
+      <rect x="64" y="84" width="196" height="22" rx="11"/>
+      <rect x="64" y="124" width="132" height="22" rx="11"/>
+      <rect x="64" y="204" width="176" height="22" rx="11"/>
+      <rect x="64" y="244" width="158" height="22" rx="11"/>
+    </g>
+    <rect x="64" y="164" width="176" height="22" rx="11" fill="#2F9E8F" opacity="0.9"/>
+    <path d="M240 175C318 175 338 150 404 150" stroke="#2F9E8F" stroke-width="3" stroke-dasharray="7 9"/>
+    <path d="M394 143l12 7-12 7" stroke="#2F9E8F" stroke-width="3"/>
+    <rect x="408" y="124" width="168" height="52" rx="16" fill="#2F9E8F" opacity="0.12"/>
+    <rect x="408" y="124" width="168" height="52" rx="16" stroke="#2F9E8F" stroke-width="3"/>
+    <rect x="428" y="141" width="112" height="7" rx="3.5" fill="#2F9E8F" opacity="0.55"/>
+    <rect x="428" y="156" width="82" height="7" rx="3.5" fill="#2F9E8F" opacity="0.55"/>
+  </g>
+</svg>

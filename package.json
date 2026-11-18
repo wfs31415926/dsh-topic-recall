@@ -1,0 +1,60 @@
+{
+  "name": "dsh-topic-recall",
+  "version": "0.1.0",
+  "description": "DSH 插件：同一会话内按话题选择性召回历史。检测到话题切换且历史确有相关片段时才注入一小段，避免每次都把无关历史带进上下文。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "context",
+    "recall",
+    "topic",
+    "token-saving"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./core": "./lib/core.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/core.js",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": "^0.2.2-rc.3",
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfs31415926/dsh-topic-recall.git"
+  },
+  "homepage": "https://github.com/wfs31415926/dsh-topic-recall#readme",
+  "bugs": {
+    "url": "https://github.com/wfs31415926/dsh-topic-recall/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

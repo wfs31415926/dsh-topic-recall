@@ -1,0 +1,6 @@
+# dsh-topic-recall bundle patch：把本插件插入 profile 的层栈。
+# 安装：plugin_manager install_bundle，target 为本目录绝对路径。
+- insert:
+    - id: dsh-topic-recall
+      name: 'dsh-topic-recall'
+      config: {}
